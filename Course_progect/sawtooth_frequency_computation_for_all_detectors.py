@@ -14,6 +14,12 @@ import sys
 #           FOR EXPERIMENT 38882 USE ROI (130000, 155000)          #
 #           FOR EXPERIMENT 38892 USE ROI (135000, 190000)          #
 #                                                                  #
+#           FOR EXPERIMENT 38988 USE ROI (60000, 90000)            #
+#           FOR EXPERIMENT 38989 USE ROI (150000, 200000)          #
+#           FOR EXPERIMENT 38990 USE ROI (100000, 150000)          #
+#           FOR EXPERIMENT 38991 USE ROI (100000, 150000)          #
+#           FOR EXPERIMENT 38992 USE ROI (140000, 170000)          #
+#                                                                  #
 ####################################################################
 
 #
@@ -96,7 +102,7 @@ def moving_average(x, w):
 
 # Enter the needed values to start algoritm
 def init_data_():
-    experiments_numbers = [38515,38516, 38865, 38882, 38892]
+    experiments_numbers = [38988, 38989, 38990, 38991, 38992]
 
     print("Enter the number of experiment: \n")
 
@@ -148,7 +154,7 @@ if __name__ == "__main__":
 
         print("Loaded %s" % DATA_FILE)
 
-        roi = (175000, 230700)
+        roi = (150000, 200000)
         print(roi)
         x = data[0, roi[0]:roi[1]]
         y = data[1, roi[0]:roi[1]]
