@@ -34,7 +34,7 @@ SENSOR_NUMBER = 0
 HIGH_PASS_CUTOFF = 625
 SMOOTHED_DD1_ORDER = 30
 LOW_PASS_CUTOFF = 5000
-SAWTOOTH_DETECTION_THRESHOLD = 0.0008
+SAWTOOTH_DETECTION_THRESHOLD = 0.00002
 
 #
 # NEEDED FUCTIONS 
@@ -70,7 +70,7 @@ def butter_filter(input_, cutoff, fs, btype, order=5):
 
 # Applies threshold to processed data and return relative (in ROI domain) indexes of sawtooth start and end
 def get_sawtooth_indexes(y, threshold):
-    start_index = 0
+    start_ind = 0
     end_index = 0
 
     data_length = y.shape[0]
@@ -105,7 +105,7 @@ def smoothed_dd1(input_, order):
 
 # Enter the needed values to start algoritm
 def init_data_():
-    experiments_numbers = [38515,38516, 38865, 38882, 38892]
+    experiments_numbers = [38988, 38989, 38990, 38991, 38992]
     name_detectors = [15,27,50,80]
     arr = [18,19,20,26]
 
