@@ -105,7 +105,7 @@ def smoothed_dd1(input_, order):
 
 # Enter the needed values to start algoritm
 def init_data_():
-    experiments_numbers = [38515,38516,38854,38856, 38858, 38865, 38882, 38892]
+    experiments_numbers = [38515,38516, 38865, 38882, 38892]
     name_detectors = [15,27,50,80]
     arr = [18,19,20,26]
 
